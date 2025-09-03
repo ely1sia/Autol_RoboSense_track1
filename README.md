@@ -7,4 +7,8 @@ It should be noted that when loading the model for the first time, a problem of 
 
 The environment configuration file exported by anaconda is environment.yml, where torch==2.7.1 and transformers==4.51.3.
 
-After placing the downloaded model in the appropriate location, modify the specified path in the phase1_inference.py file to start inference.
+After placing the downloaded model in the appropriate location, modify the specified path in the phase1_inference.py file to start inference.  
+
+Finally, for the result json file obtained by the inference script, execute data_process.py to remove the reasoning steps in the answers of some perception-type QA pairs and only keep the final results, that is, to obtain the final result file.
+
+
