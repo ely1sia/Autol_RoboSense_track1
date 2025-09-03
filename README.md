@@ -3,4 +3,8 @@
 Phase 1 uses the open source model DriveLMMo1.
 The download link is https://huggingface.co/ayeshaishaq/DriveLMMo1.
   
-It should be noted that when loading the model for the first time, a problem of "mixed use of tabs and spaces for indentation" may be reported in a Python file, need to locate and fix it yourself.
+It should be noted that when loading the model for the first time, a problem of "mixed use of tabs and spaces for indentation" may be reported in a Python file, need to locate and fix it yourself.  
+
+anaconda导出的环境配置文件为environment.yml，其中torch==2.7.1, transformers==4.51.3
+
+After placing the downloaded model in the appropriate location, modify the specified path in the phase1_inference.py file to start inference.
