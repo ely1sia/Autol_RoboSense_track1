@@ -24,6 +24,7 @@ We've also uploaded the LoRa data used for fine-tuning in the first and second p
 The platform used for fine-tuning is Xtuner.The lora_config.py file contains our parameter settings.  
 
 Due to the upload file size limit, we uploaded part of the model file to Google Drive and part to Baidu Cloud Drive. The links are:  
+https://drive.google.com/drive/folders/1WhK9vrLnxriNbBHHvZdMD7SQbPCxY80e?usp=sharing
 
 In order to align the ground coordinates output by the model with the ground coordinates in the original problem, it is necessary to process the result file obtained by inference. Run the phase2_convert_results.py file to obtain the final result file.
 
