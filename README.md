@@ -16,6 +16,8 @@ The results.json file in the folder is the result file that our team submitted t
 ## Phase2
 During this phase, we fine-tuned the Internvl3-9b model in two stages. In the first stage, we used approximately 20,000 data points from the Drivelmmo1 dataset to fine-tune the model, enabling it to perform inference before outputting the final result. In the second stage, we combined the Drive_bench dataset and a dataset of partially damaged images, yielding approximately 1,354 data points. We then used Kimi to expand this dataset with a chain of thought, supplementing the reasoning process within the dataset. Afterwards, we integrated the first-stage fine-tuning data with the second-stage fine-tuning data in a ratio of 2:8, and fine-tuned the Internvl3-9b model fine-tuned in the first stage a second time to obtain the final model.  
 
-result_phase2.json is the result file we finally submit to the leaderboard.
+result_phase2.json is the result file we finally submit to the leaderboard.  
+Considering the Internvl pre-training specifications, we wrote some coordinate transformation, image stitching and other contents in the phase2_inference.py file. Similarly, the same work was done for the fine-tuning data.  
+
 
 
