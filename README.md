@@ -21,6 +21,10 @@ Considering the Internvl pre-training specifications, we wrote some coordinate t
 
 We've also uploaded the LoRa data used for fine-tuning in the first and second phases, but we've spliced ​​the images to reduce the amount of video memory required for LoRa fine-tuning. Essentially, the LoRa1 data is the complete Drivelmmo1 data (Train + Test), while the LoRa2 data is the DriveBench_test data plus some corrupted image questions, mixed with the LoRa1 data in an 8:2 ratio.  
 
-The platform used for fine-tuning is Xtuner.The lora_config.py file contains our parameter settings.
+The platform used for fine-tuning is Xtuner.The lora_config.py file contains our parameter settings.  
+
+Due to the upload file size limit, we uploaded part of the model file to Google Drive and part to Baidu Cloud Drive. The links are:  
+
+In order to align the ground coordinates output by the model with the ground coordinates in the original problem, it is necessary to process the result file obtained by inference. Run the phase2_convert_results.py file to obtain the final result file.
 
 
