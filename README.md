@@ -20,6 +20,6 @@ result_phase2.json is the result file we finally submit to the leaderboard.
 Considering the Internvl pre-training specifications, we wrote some coordinate transformation, image stitching and other contents in the phase2_inference.py file. Similarly, the same work was done for the fine-tuning data.  
 
 We've also uploaded the LoRa data used for fine-tuning in the first and second phases, but we've spliced ​​the images to reduce the amount of video memory required for LoRa fine-tuning. Essentially, the LoRa1 data is the complete Drivelmmo1 data (Train + Test), while the LoRa2 data is the DriveBench_test data plus some corrupted image questions, mixed with the LoRa1 data in an 8:2 ratio.
-
+The platform used for fine-tuning is Xtuner.The lora_config.py file contains our parameter settings.
 
 
